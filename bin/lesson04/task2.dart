@@ -4,7 +4,7 @@ void main(List<String> args) {
   int c = 4;
   int d = 2;
 
-  int result = ((a + b + c + d) / 4).toInt();
+  int result = (a + b + c + d) ~/ 4;
   int qoldiq = result % 3;
   int butun = result ~/ 3;
 

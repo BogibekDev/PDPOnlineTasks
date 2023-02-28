@@ -1,6 +1,6 @@
 void main(List<String> args) {
   Map map = {"user_id": "10001", "user_password": "herewego123"};
-  Map newMap = Map();
+  Map newMap = {};
   print("Before: $map");
 
   map.forEach((key, value) {
