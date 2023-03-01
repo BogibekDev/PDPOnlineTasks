@@ -1,21 +1,21 @@
 void main(List<String> args) {
   Dog dog1 = Dog("tuffy", 5);
-  Dog dog2 = Dog("tuffy", 6);
+  Dog dog2 = Dog("tuffy", 5);
 
-  if (dog1 == dog2) {
+  if (dog1.compareTo(dog2)==0) {
     print("Bu obyektlar bir xil ekan");
   } else {
     print("Bu obyektlar bir xil emas ekan");
   }
 }
 
-class Dog {
+class Dog implements Comparable<Dog> {
   String name;
   int age;
   Dog(this.name, this.age);
 
   @override
-  bool operator ==(Object other) {
-    return other is Dog && name == other.name && age == other.age;
+  int compareTo(Dog other) {
+    return (other.age - age) + (other.name.hashCode - name.hashCode);
   }
 }
