@@ -1,7 +1,7 @@
 void main(List<String> args) {
-  Color.values.forEach((element) {
-    print("${element} at ${element.index}");
-  });
+  for (var element in Color.values) {
+    print("$element at ${element.index}");
+  }
 }
 
 enum Color { RED, GREEN, BLUE }

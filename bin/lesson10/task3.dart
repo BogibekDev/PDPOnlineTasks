@@ -3,8 +3,8 @@ void main(List<String> args) {
   List texts = text.split(' ');
   print(texts);
   String result = "";
-  texts.forEach((element) {
+  for (var element in texts) {
     result += "${element.toString().split('').reversed.join('')} ";
-  });
+  }
   print(result);
 }
