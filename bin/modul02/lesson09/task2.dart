@@ -7,7 +7,7 @@ void main(List<String> args) {
 
 double kopaytma(int n) {
   double kop = 1;
-  for (var i = 1; i <= n; i++) {
+  for (var i = 2; i <= n; i+=2) {
     kop *= tan(i);
   }
   return kop;

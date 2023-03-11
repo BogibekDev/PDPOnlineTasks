@@ -7,7 +7,7 @@ void main(List<String> args) {
 
 double summa(int n) {
   double sum = 0;
-  for (var i = 1; i <= n; i++) {
+  for (var i = 1; i <= n; i+=2) {
     sum += sin(i);
   }
   return sum;
